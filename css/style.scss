@@ -1,5 +1,6 @@
 $color_header: #4d98a4;
 $color_text-title: #4c505d;
+$border_color-form: #d8d8d8;
 @font-face{
   font-family: "CherrySwash-Regular";
   src : url("../font/CherrySwash-Regular.ttf");
@@ -126,6 +127,7 @@ $color_text-title: #4c505d;
 }
 .bl-about{
   background-color: #00d089;
+  padding-bottom: 97px;
 }
 .icons{
   list-style: none;
@@ -139,14 +141,81 @@ $color_text-title: #4c505d;
 
 .bl-foto{
   margin: 0 auto;
+  width: 300px;
+  padding-top: 96px;
 
 }
 .name{
   font-size: 26px;
   font-family: HelveticaLTStd-Bold;
   color: #e4e4e4;
+  padding-left: 38px;
 }
-
+.bl-about p{
+  text-align: center;
+  color: #ffffff;
+  margin-top: 65px;
+}
 .dot{
   font-size: 78px;
+}
+
+.bl-feedback{
+  padding-bottom: 20px;
+  width: 100%;
+  background: url("../img/map.jpg") no-repeat center center;
+  background-size: cover;
+  .row{
+    width: 100%;
+    margin: 0;
+  }
+  .form{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 79px 0 31px 71px;
+    border-radius: 241px;
+    overflow: hidden;
+    width: 415px;
+    form{
+      max-width: 274px;
+    }
+    input{
+      width: 100%;
+      height: 34px;
+      margin: 7px 0;
+      border: 2px solid $border_color-form;
+      padding-left: 13px;
+    }
+    input[type=submit]{
+      width: 66px;
+      height: 66px;
+      border-radius: 54px;
+      background: url("../img/submit.png") no-repeat center center;
+    }
+    textarea{
+      width: 100%;
+      height: 82px;
+      margin: 7px 0;
+      border: 2px solid $border_color-form;
+      resize: none;
+      padding-left: 13px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .form {
+    padding: 58px 0px 0 52px !important;
+  }
+}
+
+.footer{
+  height: 39px;
+  background-color: #00d089;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Helvetica LT Condensed Medium";
 }
